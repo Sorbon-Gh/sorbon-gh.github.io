@@ -1,0 +1,279 @@
+* {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 9.5pt;
+}
+
+QMainWindow, QWidget, QDialog, QMessageBox {
+    background-color: {{BG_MAIN}};
+    color: {{TEXT}};
+}
+
+QLabel {
+    color: {{TEXT_LABEL}};
+}
+
+QFrame#collapseContent QLabel {
+    color: {{TEXT}};
+    font-weight: 500;
+}
+
+QMenuBar {
+    background-color: {{MENU_BG}};
+    color: {{TEXT}};
+    padding: 2px 0;
+}
+
+QMenuBar::item {
+    padding: 5px 14px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: {{BG_CARD}};
+}
+
+QMenu {
+    background-color: {{BG_INPUT}};
+    color: {{TEXT}};
+    padding: 4px;
+    border: 1px solid {{BORDER}};
+    border-radius: 6px;
+}
+
+QMenu::item {
+    padding: 6px 24px;
+    border-radius: 3px;
+}
+
+QMenu::item:selected {
+    background-color: {{PRIMARY}};
+    color: {{TEXT_ON_DARK}};
+}
+
+QPushButton {
+    background-color: {{BTN_BG}};
+    color: {{TEXT}};
+    border: 1px solid {{BTN_BORDER}};
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+QPushButton:hover {
+    background-color: {{BG_INPUT}};
+    border-color: {{BORDER_FOCUS}};
+    color: {{TEXT}};
+}
+
+QPushButton:pressed {
+    background-color: {{BG_DARK}};
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QPushButton:disabled {
+    background-color: {{BG_MAIN}};
+    color: {{TEXT_MUTED}};
+    border-color: {{BORDER}};
+}
+
+QToolButton {
+    background-color: {{BTN_BG}};
+    color: {{TEXT}};
+    border: 1px solid {{BTN_BORDER}};
+    border-radius: 8px;
+}
+
+QToolButton:hover {
+    background-color: {{BG_INPUT}};
+    border-color: {{BORDER_FOCUS}};
+}
+
+QToolButton:pressed {
+    background-color: {{BG_DARK}};
+}
+
+QPushButton#primaryButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{PRIMARY_HOVER}}, stop:1 {{PRIMARY}});
+    border: 1px solid {{PRIMARY_HOVER}};
+    color: {{TEXT_ON_DARK}};
+    font-weight: 600;
+}
+
+QPushButton#primaryButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #2da3ff, stop:1 {{PRIMARY_HOVER}});
+    border-color: #2da3ff;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: {{PRIMARY}};
+    padding-top: 9px;
+    padding-bottom: 7px;
+}
+
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {
+    background-color: {{BG_INPUT}};
+    color: {{TEXT}};
+    border: 1px solid {{BORDER}};
+    border-radius: 6px;
+    padding: 5px 8px;
+    min-height: 22px;
+    min-width: 90px;
+    selection-background-color: {{PRIMARY}};
+    selection-color: {{TEXT_ON_DARK}};
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border-color: {{BORDER_FOCUS}};
+}
+
+QComboBox::drop-down {
+    border: none;
+    background: transparent;
+    width: 22px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: {{BG_INPUT}};
+    color: {{TEXT}};
+    border: 1px solid {{BORDER}};
+    selection-background-color: {{PRIMARY}};
+    selection-color: {{TEXT_ON_DARK}};
+}
+
+QSlider::groove:horizontal {
+    height: 6px;
+    background: {{SLIDER_GROOVE}};
+    border-radius: 3px;
+}
+
+QSlider::sub-page:horizontal {
+    background: {{PRIMARY}};
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: {{PRIMARY_HOVER}};
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+    border: 1px solid {{PRIMARY}};
+}
+
+QSlider::handle:horizontal:hover {
+    background: {{PRIMARY_HOVER}};
+    border-color: {{BORDER_FOCUS}};
+}
+
+QGroupBox {
+    font-weight: 600;
+    border: 1px solid rgba(24, 144, 255, 0.3);
+    border-radius: 8px;
+    margin-top: 14px;
+    padding-top: 10px;
+    background: rgba(24, 144, 255, 0.02);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    color: {{ACCENT}};
+    left: 12px;
+    font-size: 10pt;
+    letter-spacing: 0.5px;
+}
+
+QFrame#leftPanel {
+    background-color: {{BG_PANEL}};
+    border-right: 1px solid {{BORDER}};
+}
+
+QPushButton#collapseHeader {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    padding: 8px 12px;
+    color: {{TEXT_LABEL}};
+}
+
+QPushButton#collapseHeader:hover {
+    background-color: {{BG_CARD}};
+    border-radius: 4px;
+}
+
+QFrame#collapseContent {
+    background-color: {{BG_INPUT}};
+}
+
+QScrollBar:vertical {
+    background: {{BG_MAIN}};
+    width: 7px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: {{SCROLL_HANDLE}};
+    border-radius: 3px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: {{PRIMARY}};
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: {{BG_MAIN}};
+    height: 7px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:horizontal {
+    background: {{SCROLL_HANDLE}};
+    border-radius: 3px;
+    min-width: 24px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: {{PRIMARY}};
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+QSplitter::handle {
+    background-color: {{SPLITTER}};
+    width: 3px;
+    height: 3px;
+}
+
+QSplitter::handle:hover {
+    background-color: {{PRIMARY}};
+}
+
+QStatusBar {
+    background-color: {{STATUS_BG}};
+    color: {{TEXT_MUTED}};
+    border-top: 1px solid {{BORDER}};
+    min-height: 22px;
+}
+
+QToolTip {
+    background-color: {{BG_CARD}};
+    color: {{TEXT}};
+    border: 1px solid {{BORDER_FOCUS}};
+    border-radius: 4px;
+    padding: 4px 8px;
+}
