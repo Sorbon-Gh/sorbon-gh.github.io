@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сорбон — Full-Stack Разработчик</title>
+    <meta name="description" content="Ганизода Сорбон — Full-Stack разработчик. Веб-сайты, веб-приложения, мобильные и десктопные приложения.">
+    <meta name="google-site-verification" content="Z-bg6QIiKMG_0FD9CE97sleG6BTZ7q_LUB2WJzcYlWE">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Sorbon<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#projects">Проекты</a>
+                <a href="#tech">Технологии</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+                <a href="#contacts" class="nav-cta">Связаться</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">Доступен для проектов</div>
+                <h1>
+                    <span class="hero-line">Привет, я</span>
+                    <span class="hero-name">Сорбон</span>
+                    <span class="hero-line hero-subtitle">Full-Stack Разработчик</span>
+                </h1>
+                <p class="hero-desc">
+                    Создаю веб-сайты, веб-приложения, мобильные и десктопные решения.
+                    От идеи до готового продукта — с фокусом на качество, производительность и детальный дизайн.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://t.me/Sorbon_Gh" class="btn btn-primary" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        Telegram
+                    </a>
+                    <a href="mailto:ghanizodasorbon@gmail.com" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        Написать
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo-wrapper">
+                <div class="hero-photo-glow"></div>
+                <div class="hero-photo-border">
+                    <img src="assets/photo.jpg" alt="Сорбон" class="hero-photo" id="heroPhoto">
+                </div>
+                <div class="hero-photo-ring"></div>
+                <div class="hero-photo-dots"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Проекты</span>
+                <h2>Мои работы</h2>
+                <p>Каждый проект — это решение конкретной задачи с вниманием к деталям</p>
+            </div>
+            <div class="projects-grid">
+                <a href="/SignalStudio/" class="project-card">
+                    <div class="project-preview">
+                        <div class="project-preview-inner">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 36 L14 20 L20 26 L28 8 L36 24 L42 14" stroke="#00ff41"/><circle cx="6" cy="36" r="2" fill="#00ff41"/><circle cx="42" cy="14" r="2" fill="#00ff41"/></svg>
+                            <span>DSP</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-labels">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">PyQt6</span>
+                            <span class="project-tag">Desktop</span>
+                        </div>
+                        <h3>Signal Studio</h3>
+                        <p>Профессиональный десктопный комплекс для генерации, фильтрации и спектрального анализа аудиосигналов. 11 типов сигналов, IIR-фильтры, осциллограф, БПФ-спектр, спектрограмма.</p>
+                        <div class="project-link">
+                            <span>Открыть проект</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="project-card project-card-soon">
+                    <div class="project-preview">
+                        <div class="project-preview-inner">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="32" height="32" rx="4"/><rect x="12" y="12" width="10" height="10" rx="1" fill="currentColor" opacity="0.3"/><rect x="24" y="14" width="14" height="2" rx="1" fill="currentColor" opacity="0.2"/><rect x="24" y="18" width="10" height="2" rx="1" fill="currentColor" opacity="0.2"/><rect x="12" y="26" width="10" height="10" rx="1" fill="currentColor" opacity="0.3"/><rect x="24" y="28" width="14" height="2" rx="1" fill="currentColor" opacity="0.2"/><rect x="24" y="32" width="10" height="2" rx="1" fill="currentColor" opacity="0.2"/></svg>
+                            <span>QR</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-labels">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <h3>QR Generator</h3>
+                        <p>Генератор QR-кодов с настройкой цветов и размеров. Быстро, красиво, бесплатно.</p>
+                        <div class="project-link">
+                            <span class="soon-badge">Скоро</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-placeholder">
+                    <div class="project-preview">
+                        <div class="project-preview-inner">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"><line x1="8" y1="24" x2="40" y2="24"/><polyline points="32 16 40 24 32 32"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="muted">Следующий проект</h3>
+                        <p class="muted">Новые идеи и разработки уже в процессе...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Технологии</span>
+                <h2>Инструментарий</h2>
+                <p>Технологии, с которыми я работаю каждый день</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" style="--accent: #3776AB">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M20 4L4 12l16 8 16-8-16-8zM4 20l16 8 16-8M4 28l16 8 16-8" stroke="#3776AB" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-card" style="--accent: #ED8B00">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="4" stroke="#ED8B00" stroke-width="2" fill="none"/><text x="20" y="26" text-anchor="middle" fill="#ED8B00" font-size="12" font-weight="700" font-family="Inter">JV</text></svg>
+                    </div>
+                    <span class="tech-name">Java</span>
+                </div>
+                <div class="tech-card" style="--accent: #7F52FF">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="6" stroke="#7F52FF" stroke-width="2" fill="none"/><text x="20" y="26" text-anchor="middle" fill="#7F52FF" font-size="11" font-weight="700" font-family="Inter">Kt</text></svg>
+                    </div>
+                    <span class="tech-name">Kotlin</span>
+                </div>
+                <div class="tech-card" style="--accent: #F7DF1E">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="3" stroke="#F7DF1E" stroke-width="2" fill="none"/><text x="20" y="26" text-anchor="middle" fill="#F7DF1E" font-size="13" font-weight="700" font-family="JetBrains Mono">JS</text></svg>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <div class="tech-card" style="--accent: #FA7343">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="#FA7343" stroke-width="2" fill="none"/><text x="20" y="25" text-anchor="middle" fill="#FA7343" font-size="11" font-weight="700" font-family="Inter">Swift</text></svg>
+                    </div>
+                    <span class="tech-name">Swift</span>
+                </div>
+                <div class="tech-card" style="--accent: #E34F26">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M8 30l4-4h16l4 4M8 10h24v16l-4 4H12l-4-4V10z" stroke="#E34F26" stroke-width="2" fill="none"/><text x="20" y="24" text-anchor="middle" fill="#E34F26" font-size="8" font-weight="700" font-family="JetBrains Mono">5</text></svg>
+                    </div>
+                    <span class="tech-name">HTML5</span>
+                </div>
+                <div class="tech-card" style="--accent: #1572B6">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M8 30l4-4h16l4 4M8 10h24v16l-4 4H12l-4-4V10z" stroke="#1572B6" stroke-width="2" fill="none"/><text x="20" y="24" text-anchor="middle" fill="#1572B6" font-size="8" font-weight="700" font-family="JetBrains Mono">3</text></svg>
+                    </div>
+                    <span class="tech-name">CSS3</span>
+                </div>
+                <div class="tech-card" style="--accent: #777BB4">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="22" rx="14" ry="10" stroke="#777BB4" stroke-width="2" fill="none"/><text x="20" y="26" text-anchor="middle" fill="#777BB4" font-size="10" font-weight="700" font-family="JetBrains Mono">PHP</text></svg>
+                    </div>
+                    <span class="tech-name">PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Услуги</span>
+                <h2>Чем могу помочь</h2>
+                <p>Полный цикл разработки — от концепции до запуска</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <h3>Разработка веб-сайтов</h3>
+                    <p>Лендинги, корпоративные сайты, порталы. Адаптивный дизайн, высокая скорость загрузки, SEO-оптимизация.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <h3>Веб-приложения</h3>
+                    <p>Интерактивные веб-приложения с сложной логикой. Панели управления, дашборды, SaaS-решения.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <h3>Мобильные приложения</h3>
+                    <p>Нативные приложения для Android (Kotlin) и iOS (Swift). Кроссплатформенные решения.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <h3>Десктопные приложения</h3>
+                    <p>Профессиональные десктопные решения для Windows, macOS и Linux. Высокая производительность.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Контакты</span>
+                <h2>Давайте работать вместе</h2>
+                <p>Есть идея или проект? Напишите мне, обсудим детали</p>
+            </div>
+            <div class="contacts-grid">
+                <a href="https://t.me/Sorbon_Gh" class="contact-card" target="_blank">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="#229ED9"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </div>
+                    <div class="contact-text">
+                        <span class="contact-label">Telegram</span>
+                        <span class="contact-value">@Sorbon_Gh</span>
+                    </div>
+                    <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="mailto:ghanizodasorbon@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    </div>
+                    <div class="contact-text">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">ghanizodasorbon@gmail.com</span>
+                    </div>
+                    <svg class="contact-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <span>&copy; Ганизода Сорбон, 2026</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

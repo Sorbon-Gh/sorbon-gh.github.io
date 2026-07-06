@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Studio — Генерация, фильтрация и анализ сигналов</title>
+    <meta name="description" content="Signal Studio — профессиональный десктопный комплекс для генерации, фильтрации и спектрального анализа аудиосигналов. 11 типов сигналов, IIR-фильтры, осциллограф, БПФ-спектр, спектрограмма.">
+    <meta name="google-site-verification" content="Z-bg6QIiKMG_0FD9CE97sleG6BTZ7q_LUB2WJzcYlWE" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">
+                <img class="logo-icon" src="favicon.ico" alt="Signal Studio">
+                <span>Signal Studio</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Возможности</a>
+                <a href="#screenshots">Интерфейс</a>
+                <a href="#signals">Сигналы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">v1.0.0 — Windows</div>
+                <h1>
+                    <span class="hero-title-line">Генерация.</span>
+                    <span class="hero-title-line accent">Фильтрация.</span>
+                    <span class="hero-title-line">Анализ.</span>
+                </h1>
+                <p class="hero-desc">
+                    Профессиональный десктопный комплекс для работы с аудиосигналами. 
+                    11 типов сигналов, 4 типа IIR-фильтров, осциллограф с курсорами, 
+                    БПФ-спектр, спектрограмма и захват с микрофона в реальном времени.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://t.me/Sorbon_Gh" class="btn btn-primary btn-lg" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        Связаться
+                    </a>
+                </div>
+                <div class="hero-tech">
+                    <span>Python</span>
+                    <span class="dot">·</span>
+                    <span>PyQt6</span>
+                    <span class="dot">·</span>
+                    <span>NumPy</span>
+                    <span class="dot">·</span>
+                    <span>SciPy</span>
+                    <span class="dot">·</span>
+                    <span>PyQtGraph</span>
+                    <span class="dot">·</span>
+                    <span>sounddevice</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-screenshot-wrapper">
+                    <img src="screenshots/06_generator_440hz.png" alt="Signal Studio — Генератор 440 Гц" class="hero-screenshot" loading="eager">
+                    <div class="screenshot-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Возможности</span>
+                <h2>Полный инструментарий для DSP</h2>
+                <p>Всё необходимое для генерации, обработки и анализа сигналов в одном приложении</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#00ff41" stroke-width="2"><path d="M6 36 L14 20 L20 26 L28 8 L36 24 L42 14"/><circle cx="6" cy="36" r="2.5" fill="#00ff41"/><circle cx="42" cy="14" r="2.5" fill="#00ff41"/></svg>
+                    </div>
+                    <h3>Генератор сигналов</h3>
+                    <p>11 типов сигналов с полной настройкой параметров: частота, амплитуда, фаза, смещение, скважность. Поддержка частот дискретизации от 8 до 96 кГц.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#1890ff" stroke-width="2"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M12 34 L18 20 L22 26 L30 14 L36 22"/></svg>
+                    </div>
+                    <h3>Осциллограф</h3>
+                    <p>Временная область с двумя подвижными курсорами и 6 автоматическими измерениями: Vpp, RMS, частота, период, Δt, ΔV.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#ff9500" stroke-width="2"><rect x="6" y="10" width="36" height="28" rx="3"/><line x1="12" y1="32" x2="16" y2="32"/><line x1="16" y1="32" x2="20" y2="20"/><line x1="20" y1="20" x2="22" y2="28"/><line x1="22" y1="28" x2="24" y2="16"/><line x1="24" y1="16" x2="28" y2="30"/><line x1="28" y1="30" x2="32" y2="14"/><line x1="32" y1="14" x2="36" y2="24"/><line x1="36" y1="24" x2="42" y2="22"/></svg>
+                    </div>
+                    <h3>БПФ-спектр</h3>
+                    <p>Амплитудный спектр в децибелах с выбором окон (Ханн, Хэммин, Блэкман, Кайзер) и настраиваемым размером сегмента до 8192 точек.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#a855f7" stroke-width="2"><rect x="6" y="10" width="36" height="28" rx="3"/><rect x="8" y="28" width="4" height="8" fill="#0078d4" rx="1"/><rect x="14" y="22" width="4" height="14" fill="#0078d4" rx="1"/><rect x="20" y="18" width="4" height="18" fill="#1890ff" rx="1"/><rect x="26" y="14" width="4" height="22" fill="#1890ff" rx="1"/><rect x="32" y="16" width="4" height="20" fill="#00a8ff" rx="1"/><rect x="38" y="24" width="4" height="12" fill="#0078d4" rx="1"/></svg>
+                    </div>
+                    <h3>Спектрограмма</h3>
+                    <p>Визуализация изменения спектра во времени с цветовой шкалой и автоматической настройкой уровней отображения.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="400">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#e91e63" stroke-width="2"><circle cx="24" cy="24" r="16"/><path d="M24 8 A16 16 0 0 1 40 24" stroke-width="3"/><path d="M24 14 A10 10 0 0 1 34 24" stroke-width="3"/><circle cx="24" cy="24" r="4" fill="#e91e63"/></svg>
+                    </div>
+                    <h3>IIR-фильтры</h3>
+                    <p>4 типа аппроксимации (Баттерворт, Чебышёв I/II, Эллиптический) × 4 вида фильтров (НЧ, ВЧ, ПФ, без фильтра). Порядок до 10.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="500">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#00bcd4" stroke-width="2"><rect x="6" y="8" width="36" height="32" rx="3"/><path d="M6 28 L18 28 L24 20 L30 28 L42 28"/><circle cx="24" cy="20" r="3" fill="#00bcd4"/></svg>
+                    </div>
+                    <h3>Захват в реальном времени</h3>
+                    <p>Запись с микрофона с кольцевым буфером 5 секунд и одновременным отображением осциллограммы, спектра и спектрограммы.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="600">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#4caf50" stroke-width="2"><path d="M14 8 L14 40 L34 24 Z" fill="#4caf50" fill-opacity="0.2"/><path d="M14 8 L14 40 L34 24 Z"/></svg>
+                    </div>
+                    <h3>Воспроизведение</h3>
+                    <p>Прослушивание сгенерированных и загруженных сигналов напрямую в приложении через sounddevice.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="700">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="#ff5722" stroke-width="2"><path d="M10 38 L18 38 L18 12 L10 12 Z"/><path d="M22 38 L30 38 L30 18 L22 18 Z"/><path d="M34 38 L42 38 L42 8 L34 8 Z"/><line x1="8" y1="38" x2="44" y2="38"/></svg>
+                    </div>
+                    <h3>WAV анализатор</h3>
+                    <p>Загрузка WAV файлов (8/16/24/32 бит), выбор стереоканала, полная спектральная обработка и экспорт.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Carousel -->
+    <section class="section screenshots-section" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Интерфейс</span>
+                <h2>Тёмная тема, продуманный дизайн</h2>
+                <p>Профессиональный интерфейс в стиле GitHub Dark с зелёными сигналами на чёрном фоне графиков</p>
+            </div>
+            <div class="screenshots-carousel" id="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide active">
+                        <img src="screenshots/06_generator_440hz.png" alt="Генератор — синусоида 440 Гц">
+                        <div class="slide-caption">Генератор — синусоида 440 Гц с осциллографом, БПФ-спектром и спектрограммой</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/02_generator_sawtooth.png" alt="Генератор — пилообразный сигнал">
+                        <div class="slide-caption">Пилообразный сигнал — чёткие гармоники в спектре</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/03_generator_chirp.png" alt="Генератор — чирп">
+                        <div class="slide-caption">Чирп-сигнал — линейная развёртка частоты</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/07_generator_noise.png" alt="Генератор — шум">
+                        <div class="slide-caption">Белый шум — равномерный спектр</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/08_generator_gaussian.png" alt="Генератор — гауссов импульс">
+                        <div class="slide-caption">Гауссов импульс — колоколообразная огибающая</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/04_analyzer_empty.png" alt="Анализатор WAV">
+                        <div class="slide-caption">Анализатор WAV — загрузка и анализ аудиофайлов</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="screenshots/05_realtime.png" alt="Реальное время">
+                        <div class="slide-caption">Реальное время — захват с микрофона</div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Предыдущий">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Следующий">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signal Types -->
+    <section class="section signals-section" id="signals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Типы сигналов</span>
+                <h2>11 форм сигналов</h2>
+                <p>Полный набор стандартных и специальных сигналов для любых задач DSP</p>
+            </div>
+            <div class="signals-grid">
+                <div class="signal-item"><canvas class="signal-canvas" data-type="sinusoidal"></canvas><span>Синусоида</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="triangular"></canvas><span>Треугольник</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="rectangular"></canvas><span>Прямоугольник</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="meander"></canvas><span>Меандр</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="sawtooth"></canvas><span>Пилообразный</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="noise"></canvas><span>Шум</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="pulse"></canvas><span>Импульс</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="dc"></canvas><span>Постоянный (DC)</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="chirp"></canvas><span>Чирп</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="trapezoidal"></canvas><span>Трапеция</span></div>
+                <div class="signal-item"><canvas class="signal-canvas" data-type="gaussian"></canvas><span>Гауссов импульс</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="section filters-section" id="filters">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Фильтрация</span>
+                <h2>IIR-фильтры</h2>
+                <p>Четыре типа аппроксимации и четыре вида фильтров с полной настройкой параметров</p>
+            </div>
+            <div class="filters-grid">
+                <div class="filter-card">
+                    <div class="filter-type">Низкочастотный (НЧ)</div>
+                    <div class="filter-desc">Пропускает только низкие частоты</div>
+                    <div class="filter-approx-list">
+                        <span class="filter-tag">Баттерворт</span>
+                        <span class="filter-tag">Чебышёв I</span>
+                        <span class="filter-tag">Чебышёв II</span>
+                        <span class="filter-tag">Эллиптический</span>
+                    </div>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-type">Высокочастотный (ВЧ)</div>
+                    <div class="filter-desc">Пропускает только высокие частоты</div>
+                    <div class="filter-approx-list">
+                        <span class="filter-tag">Баттерворт</span>
+                        <span class="filter-tag">Чебышёв I</span>
+                        <span class="filter-tag">Чебышёв II</span>
+                        <span class="filter-tag">Эллиптический</span>
+                    </div>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-type">Полосовой (ПФ)</div>
+                    <div class="filter-desc">Пропускает частоты в выбранной полосе</div>
+                    <div class="filter-approx-list">
+                        <span class="filter-tag">Баттерворт</span>
+                        <span class="filter-tag">Чебышёв I</span>
+                        <span class="filter-tag">Чебышёв II</span>
+                        <span class="filter-tag">Эллиптический</span>
+                    </div>
+                </div>
+                <div class="filter-card highlight">
+                    <div class="filter-type">SOS-форма</div>
+                    <div class="filter-desc">Численно устойчивая реализация, порядок 1–10</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contacts -->
+    <section class="section contacts-section" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Контакты</span>
+                <h2>Связаться с разработчиком</h2>
+            </div>
+            <div class="contacts-grid">
+                <a href="https://t.me/Sorbon_Gh" class="contact-card" target="_blank">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#229ED9"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <div>
+                        <div class="contact-label">Telegram</div>
+                    </div>
+                    <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="mailto:ghanizodasorbon@gmail.com" class="contact-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    <div>
+                        <div class="contact-label">Email</div>
+                    </div>
+                    <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span>© Ганизода Сорбон, 2026</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
