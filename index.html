@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<script>var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);if(t==='light')document.documentElement.style.cssText='background:#f4f4f8;color:#16162a';else document.documentElement.style.cssText='background:#0a0e2a;color:#e8e8ed';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сорбон</title>
+    <meta name="description" content="Full-stack разработчик. Веб, мобильные и десктопные приложения.">
+    <meta name="google-site-verification" content="Z-bg6QIiKMG_0FD9CE97sleG6BTZ7q_LUB2WJzcYlWE">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">Full-stack</span> разработчик
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#projects">Проекты</a>
+                <a href="#tech">Навыки</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Сорбон</h1>
+                <p class="hero-desc">
+                    Пишу код на Python, Kotlin, Swift, JavaScript. Делаю сайты, мобилки и десктоп — от идеи до рабочего продукта.
+                </p>
+            </div>
+            <div class="hero-photo-wrapper">
+                <div class="hero-photo-glow"></div>
+                <div class="hero-photo-border">
+                    <img src="assets/admin.jpg" alt="Сорбон" class="hero-photo" id="heroPhoto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Проекты</h2>
+            </div>
+            <div class="projects-grid">
+                <a href="/SignalStudio/" class="project-card">
+                    <div class="project-preview">
+                        <div class="project-preview-inner">
+                            <img src="/SignalStudio/main/assets/icon.ico" alt="" style="width:52px;height:52px;border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-labels">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">PyQt6</span>
+                            <span class="project-tag">Desktop</span>
+                        </div>
+                        <h3>Signal Studio</h3>
+                        <p>Генерация, фильтрация и спектральный анализ аудиосигналов. 11 типов сигналов, IIR-фильтры, осциллограф, БПФ, спектрограмма.</p>
+                        <div class="project-link">
+                            <span>Посмотреть</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2>Навыки</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" style="--accent: #3776AB">
+                    <div class="tech-icon">
+                        <i class="devicon-python-plain colored"></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-card" style="--accent: #ED8B00">
+                    <div class="tech-icon">
+                        <i class="devicon-java-plain colored"></i>
+                    </div>
+                    <span class="tech-name">Java</span>
+                </div>
+                <div class="tech-card" style="--accent: #7F52FF">
+                    <div class="tech-icon">
+                        <i class="devicon-kotlin-plain colored"></i>
+                    </div>
+                    <span class="tech-name">Kotlin</span>
+                </div>
+                <div class="tech-card" style="--accent: #F7DF1E">
+                    <div class="tech-icon">
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <div class="tech-card" style="--accent: #FA7343">
+                    <div class="tech-icon">
+                        <i class="devicon-swift-plain colored"></i>
+                    </div>
+                    <span class="tech-name">Swift</span>
+                </div>
+                <div class="tech-card" style="--accent: #E34F26">
+                    <div class="tech-icon">
+                        <i class="devicon-html5-plain colored"></i>
+                    </div>
+                    <span class="tech-name">HTML5</span>
+                </div>
+                <div class="tech-card" style="--accent: #1572B6">
+                    <div class="tech-icon">
+                        <i class="devicon-css3-plain colored"></i>
+                    </div>
+                    <span class="tech-name">CSS3</span>
+                </div>
+                <div class="tech-card" style="--accent: #777BB4">
+                    <div class="tech-icon">
+                        <i class="devicon-php-plain colored"></i>
+                    </div>
+                    <span class="tech-name">PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Услуги</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Веб-сайты</h3>
+                    <p>Лендинги, корпоративные сайты, порталы. Адаптивная вёрстка, быстрая загрузка, SEO.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <h3>Веб-приложения</h3>
+                    <p>Панели управления, дашборды, интерактивные инструменты. Сложная логика на фронтенде и бэкенде.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <h3>Мобильные приложения</h3>
+                    <p>Нативная разработка под Android (Kotlin) и iOS (Swift). Кроссплатформенные решения.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card">
+                    <h3>Десктопные приложения</h3>
+                    <p>Профессиональный софт под Windows, macOS, Linux. PyQt, высокая производительность.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts-grid">
+                <a href="https://t.me/Sorbon_Gh" class="contact-card" target="_blank">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#229ED9"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </div>
+                    <span class="contact-label-single">Telegram</span>
+                    <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="mailto:ghanizodasorbon@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    </div>
+                    <span class="contact-label-single">Email</span>
+                    <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <span>&copy; Sorbon Gh, 2026</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
